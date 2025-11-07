@@ -56,11 +56,31 @@ A web-based application that generates optimized pallet configurations for corru
 
 ## Getting Started
 
-### Prerequisites
+### Quick Start (No Installation Required)
 
-- Node.js 18+ and npm
+If you already have the built application, simply run:
 
-### Installation
+**Option 1: Double-click the launcher** (Easiest)
+- **Windows**: Double-click `serve.bat`
+- **Mac/Linux**: Double-click `serve.sh` (or run `./serve.sh` in terminal)
+
+**Option 2: Using npm**
+```bash
+npm run serve
+```
+
+**Option 3: Manual Python command**
+```bash
+python3 serve.py
+```
+
+The application will automatically open in your browser at `http://localhost:8080`
+
+### Development Setup
+
+If you want to modify the code:
+
+**Prerequisites**: Node.js 18+ and npm, Python 3
 
 1. Clone the repository
 2. Install dependencies:
@@ -72,8 +92,7 @@ A web-based application that generates optimized pallet configurations for corru
    ```bash
    npm run dev
    ```
-
-4. Open your browser to `http://localhost:5173`
+   Opens at `http://localhost:5173`
 
 ### Build for Production
 
@@ -81,7 +100,7 @@ A web-based application that generates optimized pallet configurations for corru
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+The built files will be in the `dist` directory. Run with `npm run serve` or the launcher scripts.
 
 ## Usage Guide
 
