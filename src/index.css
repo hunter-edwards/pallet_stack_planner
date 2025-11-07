@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 min-h-screen;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    @apply bg-white;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  /* Ensure print cards are properly sized */
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  /* Prevent page breaks within important sections */
+  .print-card,
+  .specification-section {
+    page-break-inside: avoid;
+  }
+
+  /* High contrast for print */
+  .border {
+    border-color: #000 !important;
+  }
+}
